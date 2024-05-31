@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ER Diyagramı</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+
+    <pre id="diagram">
+        ```mermaid
+        erDiagram
+            category                                                                                          inventory                                                                 customer
+
+                *category_id                                                                                         "inventory_id                                                    customer_id
+
+                name                                                                                                 film id                                                          store_id
+
+                last update                                                                                          store id                                                         first name
+
+                                                                                                                         last update                                                      last_name
+
+                                                                                                                                                                                ++ email
+
+                                                                                                                                                                                          address id
+
+                                                                                                                                                                                          activebool
+
+                    film_category                                                                                                                                rental                   create date
+                                                                                                                                                                                          last update
+
+                    *film id                                                                                             *rental_id                                                       active
+                    *category_id                                                                                         rental date
+
+                    last_update                                                                                          inventory id                                       He
+                                                                                                                         customer_id
+
+                                                                                                                         return date
+
+                                                                                                                         staff id                                                                                  address
+                                                                                                                         last update
+
+                                                                   film                                                                                                                   address
+
+                    film_id                                                                                                                                                               address id
+
+                    title                                                                                                                                                                 address2
+
+                    description                                                                                                                                                           district
+
+                    release year                                                                                                                                payment                   city id
+                    language_id                                                                                                                                                           postal_code
+
+                    rental_duration                                                                                      payment id                                                       phone
+                                                                                                                         customer_id                                                      last_update
+
+                    rental rate                                                                                          staff_id
+                    length
+
+                    replacernent cost                                                                                    rental_id
+                                                                                                                         amount
+
+                    rating                                                                                               payment date
+                    last_update
+
+                    special features                                                                                                                                                                        city
+                    fulltext
+
+                                                                                                                                                         staff                            city_id
+                                                                                                                                                                                          city
+
+                                                                                                                         staff id                                                         country id
+
+                                                                                                                         first name                                                       last_update
+
+                                                                                                                         last name
+
+                                                                                                                         address_id
+
+                                      language                                                                           email
+
+                    *language_id                                                                                         store_id                                                                                  country
+                                                                                                                         active
+
+                    name                                                                                                 username                                                         country id
+                    last update                                                                                          password
+
+                                                                                                                         last update                                                      country
+                                                                                                                                                                                          last update
+                                                                                                                         picture
+
+                                      film_actor                                                                                                                  actor                                              store
+
+                    actor_id                                                                                             actor_id                                                         store id
+
+                    film id
+
+                    last update                                                                                          first name                                                       manager staff id
+                                                                                                                         last_name                                                        address id
+
+                                                                                                                         last update                                                      last update
+
+                                                   Gizli yorumlar
+
+                                                                                                                                                                         +
+
+                                                                                                                                                                                2
+        ```
+    </pre>
+
+    <script>
+        mermaid.init('diagram', {
+            theme: 'default',
+            // Diyagramı istediğiniz gibi özelleştirebilirsiniz
+        });
+    </script>
+</body>
+</html>
